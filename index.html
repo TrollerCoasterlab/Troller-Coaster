@@ -1,295 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Troller Coaster</title>
-
-<style>
-body{
-margin:0;
-background:#000;
-display:flex;
-justify-content:center;
-align-items:flex-start;
-}
-
-img{
-width:100%;
-max-width:1400px;
-display:block;
-}
-</style>
-</head>
-
-<body>
-
-<img src="troller-site.png">
-
-</body>
-</html>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #000;
-  color: #fff;
-}
-
-header, section, footer {
-  padding: 40px;
-  text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.cta {
-  background: linear-gradient(90deg, #6A0DAD, #9A4DFF);
-  border: none;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero-bg {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.stat, .phase {
-  display: inline-block;
-  margin: 20px;
-}
-troller-coaster-website/
-│
-├── index.html              # Main HTML file
-├── styles.css              # Global CSS file
-├── scripts.js              # Optional JS for animations/interactivity
-│
-├── assets/                 # All sliced images from screenshot
-│   ├── logo.png
-│   ├── hero-bg.png
-│   ├── buy-stroller-btn.png
-│   ├── community-icon.png
-│   ├── supply-icon.png
-│   ├── lp-icon.png
-│   ├── pie-chart.png
-│   ├── no-tax.png
-│   ├── lp-locked.png
-│   ├── community-first.png
-│   ├── safe.png
-│   ├── fair-launch.png
-│   ├── rocket.png
-│   ├── graph.png
-│   ├── coaster.png
-│   ├── moon.png
-│   ├── coming-soon-banner.png
-│   ├── nft-btn.png
-│   ├── twitter.png
-│   ├── telegram.png
-│   ├── discord.png
-│   └── (any other sliced icons/buttons)
-│
-├── fonts/                  # Custom fonts if needed
-│   └── Poppins-Regular.ttf
-│
-└── README.md               # Notes/documentation
-this should give you what you need 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
-  <title>Troller Coaster</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TROLLER COASTER | $TROLLER</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header, section, footer {
-      padding: 40px;
-      text-align: center;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .cta {
-      background: linear-gradient(90deg, #6A0DAD, #9A4DFF);
-      border: none;
-      padding: 10px 20px;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-    .secondary {
-      background: transparent;
-      border: 2px solid #9A4DFF;
-      padding: 10px 20px;
-      color: #9A4DFF;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-    .hero {
-      position: relative;
-      padding: 80px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .hero-buttons {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .hero-bg {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      opacity: 0.3;
-    }
-    .stat, .phase {
-      display: inline-block;
-      margin: 20px;
-      text-align: center;
-    }
-    .features img {
-      margin: 10px;
-      width: 60px;
-    }
-    footer {
-      background: #111;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-    .socials img {
-      margin: 0 10px;
-      width: 30px;
-      cursor: pointer;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        gap: 15px;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-      .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .stat, .phase {
-        display: block;
-        margin: 20px auto;
-      }
-    }
-    @media (min-width: 601px) and (max-width: 1024px) {
-      header {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
-      }
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      .stat, .phase {
-        width: 45%;
-        margin: 20px auto;
-      }
-    }
+    body { margin:0; font-family: 'Arial', sans-serif; background: #0a001f; color: #fff; overflow-x: hidden; }
+    .section { width: 100%; min-height: 100vh; background-size: cover; background-position: center; position: relative; }
+    .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 0, 31, 0.6); }
+    h1, h2 { font-family: 'Impact', sans-serif; text-transform: uppercase; }
+    .nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.9); z-index: 100; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .btn { background: #8b00ff; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+    footer { text-align: center; padding: 40px; background: #0a001f; }
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <img src="assets/logo.png" alt="Troller Coaster Logo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#tokenomics">Tokenomics</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#whitepaper">Whitepaper</a></li>
-        <li><a href="#nfts">NFTs</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
-    <button class="cta">Buy Stroller</button>
-  </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <h1>Hold on tight. Enjoy the ride!</h1>
-    <p>Community-driven meme token for thrill seekers.</p>
-    <div class="hero-buttons">
-      <button class="cta">Buy Stroller</button>
-      <button class="secondary">Join Community</button>
+  <!-- Navigation -->
+  <div class="nav">
+    <div style="font-size:28px; font-weight:bold; color:#c026d3;">TROLLER COASTER</div>
+    <div>
+      <a href="#home">HOME</a>
+      <a href="#tokenomics">TOKENOMICS</a>
+      <a href="#roadmap">ROADMAP</a>
+      <a href="#whitepaper">WHITEPAPER</a>
+      <a href="#nfts">NFTs</a>
     </div>
-    <img src="assets/hero-bg.png" alt="Roller Coaster Background" class="hero-bg">
+    <a href="#" class="btn">BUY $TROLLER</a>
+  </div>
+
+  <!-- Image 1 - Main Landing -->
+  <section id="home" class="section" style="background-image: url('https://your-image-url-1.jpg');">
+    <div class="overlay"></div>
+    <div style="position:relative; z-index:2; padding-top:120px; text-align:center; color:white;">
+      <h1 style="font-size:4rem; margin:0;">HOLD ON TIGHT.<br>ENJOY THE RIDE!</h1>
+    </div>
   </section>
 
-  <!-- Stats -->
-  <section id="stats">
-    <div class="stat">
-      <img src="assets/community-icon.png" alt="Community">
-      <p>100% Community</p>
+  <!-- Image 2 - Whitepaper Version -->
+  <section id="whitepaper" class="section" style="background-image: url('https://your-image-url-2.jpg');">
+    <div class="overlay"></div>
+  </section>
+
+  <!-- Image 3 - Clean Homepage Version -->
+  <section id="marketing" class="section" style="background-image: url('https://your-image-url-3.jpg');">
+    <div class="overlay"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Troller Coaster • $TROLLER • Meme Token for Entertainment Only</p>
+    <p>Always DYOR • Ride responsibly</p>
+    <div style="margin-top:20px;">
+      <a href="#" style="color:#c026d3; margin:0 15px;">Telegram</a>
+      <a href="#" style="color:#c026d3; margin:0 15px;">X / Twitter</a>
+      <a href="#" style="color:#c026d3; margin:0 15px;">Discord</a>
     </div>
-    <div class="stat">
-      <img src="assets/supply-icon.png" alt="Supply">
-      <p>1,000,000,000 Supply</p>
-    </div>
-    <div class="stat">
-      <img src="assets/lp-icon.png" alt="LP Locked">
-      <p>100% LP Locked</p>
+  </footer>
+
+</body>
+</html>

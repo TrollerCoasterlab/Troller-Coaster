@@ -6,275 +6,52 @@
 <title>Troller Coaster | $TROLLER</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-background:#050009;
-font-family:Arial,Helvetica,sans-serif;
-color:white;
-overflow-x:hidden;
-}
-
-a{
-text-decoration:none;
-color:white;
-}
-
-.container{
-max-width:1400px;
-margin:auto;
-padding:0 20px;
-}
-
-header{
-position:sticky;
-top:0;
-z-index:999;
-background:#050009;
-border-bottom:1px solid #8e2bff;
-box-shadow:0 0 20px rgba(140,0,255,.3);
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 20px;
-max-width:1400px;
-margin:auto;
-}
-
-.logo{
-font-size:34px;
-font-weight:900;
-line-height:.9;
-color:white;
-}
-
-.logo span{
-color:#bb33ff;
-}
-
-.nav-links{
-display:flex;
-gap:28px;
-font-size:14px;
-font-weight:700;
-}
-
-.nav-links a:hover{
-color:#bb33ff;
-}
-
-.buy-btn{
-padding:14px 24px;
-border-radius:10px;
-font-weight:900;
-background:linear-gradient(135deg,#d43bff,#6500ff);
-box-shadow:0 0 18px #9b00ff;
-}
-
-.hero-image{
-width:100%;
-display:block;
-border-bottom:2px solid #962cff;
-}
-
-section{
-padding:70px 0;
-}
-
-h2{
-font-size:46px;
-text-align:center;
-margin-bottom:40px;
-text-transform:uppercase;
-letter-spacing:2px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
-}
-
-.card{
-background:linear-gradient(180deg,#12001f,#07000d);
-border:1px solid #8e2bff;
-border-radius:18px;
-padding:28px;
-box-shadow:0 0 25px rgba(140,0,255,.12);
-}
-
-.card h3{
-font-size:28px;
-margin-bottom:18px;
-text-transform:uppercase;
-}
-
-.card p{
-line-height:1.7;
-color:#d8cbe8;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-margin-top:35px;
-}
-
-.stat{
-padding:25px;
-border-radius:16px;
-background:linear-gradient(180deg,#13001f,#090010);
-border:1px solid #8e2bff;
-text-align:center;
-}
-
-.stat small{
-display:block;
-margin-bottom:10px;
-color:#bda5d9;
-font-size:14px;
-text-transform:uppercase;
-}
-
-.stat strong{
-font-size:34px;
-color:white;
-}
-
-.lock-box{
-padding:40px;
-text-align:center;
-border-radius:20px;
-border:1px solid #8e2bff;
-background:#12001f;
-box-shadow:0 0 25px rgba(140,0,255,.18);
-}
-
-.lock-box .big{
-font-size:120px;
-font-weight:900;
-color:#c533ff;
-text-shadow:0 0 30px #b833ff;
-}
-
-.lock-box h2{
-margin-top:10px;
-margin-bottom:10px;
-}
-
-.token-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
-margin-top:20px;
-}
-
-.token-row{
-display:flex;
-justify-content:space-between;
-padding:12px 0;
-border-bottom:1px solid #3e1858;
-color:#d7c6ec;
-}
-
-ul{
-list-style:none;
-}
-
-li{
-margin:10px 0;
-color:#d7c6ec;
-}
-
-li::before{
-content:"✓";
-margin-right:10px;
-color:#bb33ff;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:18px;
-}
-
-.feature{
-padding:25px;
-text-align:center;
-border-radius:18px;
-border:1px solid #8e2bff;
-background:#12001f;
-}
-
-.feature h3{
-margin-top:14px;
-font-size:20px;
-}
-
-.roadmap{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-}
-
-.phase{
-padding:25px;
-border-radius:18px;
-border:1px solid #8e2bff;
-background:#12001f;
-}
-
-.phase h3{
-font-size:24px;
-margin-bottom:15px;
-}
-
-.phase span{
-color:#c533ff;
-}
-
-footer{
-padding:35px 20px;
-text-align:center;
-border-top:1px solid #8e2bff;
-color:#c8b3de;
-margin-top:40px;
-}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{background:#050009;font-family:Arial,Helvetica,sans-serif;color:white;overflow-x:hidden}
+a{text-decoration:none;color:white}
+.container{max-width:1400px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:999;background:#050009;border-bottom:1px solid #8e2bff;box-shadow:0 0 20px rgba(140,0,255,.3)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;max-width:1400px;margin:auto}
+.logo{font-size:34px;font-weight:900;line-height:.9;color:white}
+.logo span{color:#bb33ff}
+.nav-links{display:flex;gap:28px;font-size:14px;font-weight:700}
+.nav-links a:hover{color:#bb33ff}
+.buy-btn,.community-btn{padding:14px 24px;border-radius:10px;font-weight:900;background:linear-gradient(135deg,#d43bff,#6500ff);box-shadow:0 0 18px #9b00ff;display:inline-block}
+.hero-image{width:100%;display:block;border-bottom:2px solid #962cff}
+section{padding:70px 0}
+h2{font-size:46px;text-align:center;margin-bottom:40px;text-transform:uppercase;letter-spacing:2px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:linear-gradient(180deg,#12001f,#07000d);border:1px solid #8e2bff;border-radius:18px;padding:28px;box-shadow:0 0 25px rgba(140,0,255,.12)}
+.card h3{font-size:28px;margin-bottom:18px;text-transform:uppercase}
+.card p{line-height:1.7;color:#d8cbe8}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}
+.stat{padding:25px;border-radius:16px;background:linear-gradient(180deg,#13001f,#090010);border:1px solid #8e2bff;text-align:center}
+.stat small{display:block;margin-bottom:10px;color:#bda5d9;font-size:14px;text-transform:uppercase}
+.stat strong{font-size:34px;color:white}
+.main-box{padding:40px;text-align:center;border-radius:20px;border:1px solid #8e2bff;background:#12001f;box-shadow:0 0 25px rgba(140,0,255,.18)}
+.main-box .big{font-size:90px;font-weight:900;color:#c533ff;text-shadow:0 0 30px #b833ff}
+.token-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #3e1858;color:#d7c6ec}
+ul{list-style:none}
+li{margin:10px 0;color:#d7c6ec}
+li::before{content:"✓";margin-right:10px;color:#bb33ff}
+.features{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.feature{padding:25px;text-align:center;border-radius:18px;border:1px solid #8e2bff;background:#12001f}
+.feature h3{margin-top:14px;font-size:20px}
+.roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.phase{padding:25px;border-radius:18px;border:1px solid #8e2bff;background:#12001f}
+.phase h3{font-size:24px;margin-bottom:15px}
+.phase span{color:#c533ff}
+.button-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+footer{padding:35px 20px;text-align:center;border-top:1px solid #8e2bff;color:#c8b3de;margin-top:40px}
+.footer-links{margin-top:15px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.footer-links a:hover{color:#bb33ff}
 
 @media(max-width:900px){
-
-.nav-links{
-display:none;
+.nav-links{display:none}
+.cards,.stats,.features,.roadmap{grid-template-columns:1fr}
+h2{font-size:34px}
+.main-box .big{font-size:54px}
 }
-
-.cards,
-.stats,
-.features,
-.roadmap,
-.token-grid{
-grid-template-columns:1fr;
-}
-
-h2{
-font-size:34px;
-}
-
-.lock-box .big{
-font-size:80px;
-}
-
-}
-
 </style>
 </head>
 
@@ -282,128 +59,65 @@ font-size:80px;
 
 <header>
 <nav>
-
-<div class="logo">
-TROLLER<br>
-<span>COASTER</span>
-</div>
+<div class="logo">TROLLER<br><span>COASTER</span></div>
 
 <div class="nav-links">
 <a href="#about">ABOUT</a>
 <a href="#tokenomics">TOKENOMICS</a>
 <a href="#roadmap">ROADMAP</a>
 <a href="#whitepaper">WHITEPAPER</a>
-<a href="#community">COMMUNITY</a>
+<a href="https://x.com/i/communities/2037729022885380256" target="_blank">X COMMUNITY</a>
+<a href="https://t.me/RfRarewhaleLaunches" target="_blank">TELEGRAM</a>
 </div>
 
 <a href="#" class="buy-btn">BUY $TROLLER</a>
-
 </nav>
 </header>
 
-<img class="hero-image" src="08870219-A2DF-43BA-AA65-04DF85169709.png">
+<img class="hero-image" src="08870219-A2DF-43BA-AA65-04DF85169709.png" alt="Troller Coaster">
 
 <div class="container">
 
 <div class="stats">
-
-<div class="stat">
-<small>Community</small>
-<strong>100%</strong>
-</div>
-
-<div class="stat">
-<small>Total Supply</small>
-<strong>1,000,000,000</strong>
-</div>
-
-<div class="stat">
-<small>Tax</small>
-<strong>0%</strong>
-</div>
-
-<div class="stat">
-<small>LP Locked</small>
-<strong>10%</strong>
-</div>
-
+<div class="stat"><small>Community</small><strong>100%</strong></div>
+<div class="stat"><small>Total Supply</small><strong>1,000,000,000</strong></div>
+<div class="stat"><small>Tax</small><strong>0%</strong></div>
+<div class="stat"><small>Blockchain</small><strong>SOLANA</strong></div>
 </div>
 
 <section>
+<div class="main-box">
+<div class="big">ENJOY THE RIDE</div>
+<h2>TROLLER COASTER</h2>
+<p>A community-driven meme token built for thrill seekers, degens, and trolls.</p>
 
-<div class="lock-box">
-
-<div class="big">10%</div>
-
-<h2>LOCKED AT LAUNCH</h2>
-
-<p>
-Our commitment to transparency, security, and the community.
-</p>
-
+<div class="button-row">
+<a class="community-btn" href="https://x.com/i/communities/2037729022885380256" target="_blank">X COMMUNITY</a>
+<a class="community-btn" href="https://t.me/RfRarewhaleLaunches" target="_blank">TELEGRAM</a>
 </div>
-
+</div>
 </section>
 
 <section id="about">
-
 <div class="cards">
-
 <div class="card">
-
 <h3>About Troller Coaster</h3>
-
-<p>
-Troller Coaster is a community-driven meme token built for thrill seekers, degens, and trolls. No brakes. Just vibes and vertical climbs.
-</p>
-
+<p>Troller Coaster is a meme token powered by community energy, memes, and nonstop momentum. No brakes. Just vibes and vertical climbs.</p>
 </div>
 
 <div class="card">
-
 <h3>Token Overview</h3>
-
-<div class="token-row">
-<span>Name</span>
-<strong>Troller Coaster</strong>
-</div>
-
-<div class="token-row">
-<span>Symbol</span>
-<strong>$TROLLER</strong>
-</div>
-
-<div class="token-row">
-<span>Blockchain</span>
-<strong>Solana</strong>
-</div>
-
-<div class="token-row">
-<span>Total Supply</span>
-<strong>1,000,000,000</strong>
-</div>
-
-<div class="token-row">
-<span>Buy Tax</span>
-<strong>0%</strong>
-</div>
-
-<div class="token-row">
-<span>Sell Tax</span>
-<strong>0%</strong>
-</div>
-
-<div class="token-row">
-<span>Liquidity Lock</span>
-<strong>10% Locked</strong>
-</div>
-
+<div class="token-row"><span>Name</span><strong>Troller Coaster</strong></div>
+<div class="token-row"><span>Symbol</span><strong>$TROLLER</strong></div>
+<div class="token-row"><span>Blockchain</span><strong>Solana</strong></div>
+<div class="token-row"><span>Total Supply</span><strong>1,000,000,000</strong></div>
+<div class="token-row"><span>Buy Tax</span><strong>0%</strong></div>
+<div class="token-row"><span>Sell Tax</span><strong>0%</strong></div>
+<div class="token-row"><span>Launch Style</span><strong>Community Driven</strong></div>
 </div>
 
 <div class="card">
-
 <h3>Why Solana?</h3>
-
 <ul>
 <li>Ultra fast transactions</li>
 <li>Low fees</li>
@@ -411,112 +125,49 @@ Troller Coaster is a community-driven meme token built for thrill seekers, degen
 <li>Strong ecosystem</li>
 <li>Perfect for meme tokens</li>
 </ul>
-
 </div>
-
 </div>
-
 </section>
 
 <section id="tokenomics">
-
 <h2>Tokenomics</h2>
-
 <div class="cards">
-
-<div class="card">
-<h3>20%</h3>
-<p>DEX & Liquidity</p>
+<div class="card"><h3>20%</h3><p>DEX & Liquidity</p></div>
+<div class="card"><h3>25%</h3><p>Marketing</p></div>
+<div class="card"><h3>20%</h3><p>Community Rewards</p></div>
+<div class="card"><h3>15%</h3><p>Team</p></div>
+<div class="card"><h3>10%</h3><p>Development</p></div>
+<div class="card"><h3>10%</h3><p>Reserve</p></div>
 </div>
-
-<div class="card">
-<h3>25%</h3>
-<p>Marketing</p>
-</div>
-
-<div class="card">
-<h3>20%</h3>
-<p>Community Rewards</p>
-</div>
-
-<div class="card">
-<h3>15%</h3>
-<p>Team Locked</p>
-</div>
-
-<div class="card">
-<h3>10%</h3>
-<p>Development</p>
-</div>
-
-<div class="card">
-<h3>10%</h3>
-<p>Reserve</p>
-</div>
-
-</div>
-
 </section>
 
 <section>
-
 <h2>Key Features</h2>
-
 <div class="features">
-
-<div class="feature">
-<h3>No Tax</h3>
-<p>Buy & Sell 0%</p>
+<div class="feature"><h3>No Tax</h3><p>Buy & Sell 0%</p></div>
+<div class="feature"><h3>Community</h3><p>Built by the people</p></div>
+<div class="feature"><h3>Fair Launch</h3><p>No presale or VC</p></div>
+<div class="feature"><h3>Transparent</h3><p>Open roadmap & vision</p></div>
+<div class="feature"><h3>Viral Energy</h3><p>Memes, trends & momentum</p></div>
 </div>
-
-<div class="feature">
-<h3>LP Locked</h3>
-<p>10% locked at launch</p>
-</div>
-
-<div class="feature">
-<h3>Community First</h3>
-<p>Built by the community</p>
-</div>
-
-<div class="feature">
-<h3>Safe & Transparent</h3>
-<p>Renounced contract</p>
-</div>
-
-<div class="feature">
-<h3>Fair Launch</h3>
-<p>No presale. No VC.</p>
-</div>
-
-</div>
-
 </section>
 
 <section id="roadmap">
-
 <h2>Roadmap</h2>
-
 <div class="roadmap">
-
 <div class="phase">
-
 <h3>Phase 1<br><span>Launch & Build</span></h3>
-
 <ul>
 <li>Website Launch</li>
 <li>Community Setup</li>
 <li>Meme Campaign</li>
 <li>Coin Launch</li>
-<li>10% Locked</li>
+<li>Initial Marketing</li>
 </ul>
-
 </div>
 
 <div class="phase">
-
 <h3>Phase 2<br><span>Growth & Expansion</span></h3>
-
 <ul>
 <li>DEX Listings</li>
 <li>CoinGecko</li>
@@ -524,13 +175,10 @@ Troller Coaster is a community-driven meme token built for thrill seekers, degen
 <li>Livestream Events</li>
 <li>Daily Content</li>
 </ul>
-
 </div>
 
 <div class="phase">
-
 <h3>Phase 3<br><span>The Climb</span></h3>
-
 <ul>
 <li>Trending Campaigns</li>
 <li>Cross Community Collabs</li>
@@ -538,13 +186,10 @@ Troller Coaster is a community-driven meme token built for thrill seekers, degen
 <li>Brand Partnerships</li>
 <li>Viral Expansion</li>
 </ul>
-
 </div>
 
 <div class="phase">
-
 <h3>Phase 4<br><span>To The Moon</span></h3>
-
 <ul>
 <li>Global Listings</li>
 <li>Utility Expansion</li>
@@ -552,60 +197,43 @@ Troller Coaster is a community-driven meme token built for thrill seekers, degen
 <li>Governance</li>
 <li>Long Term Vision</li>
 </ul>
-
 </div>
-
 </div>
-
 </section>
 
 <section id="whitepaper">
-
 <div class="cards">
-
 <div class="card">
-
 <h3>Use Of Funds</h3>
-
-<p>
-Funds are allocated toward marketing, liquidity, community growth, development, and long-term ecosystem expansion.
-</p>
-
+<p>Funds are allocated toward marketing, liquidity, community growth, development, and ecosystem expansion.</p>
 </div>
 
-<div class="card" id="community">
-
+<div class="card">
 <h3>Community</h3>
-
 <ul>
-<li>100% Community Owned</li>
-<li>No Dev Wallets</li>
+<li>100% Community Driven</li>
 <li>No Presale</li>
 <li>No VC</li>
+<li>Built For The Trenches</li>
 </ul>
-
 </div>
 
 <div class="card">
-
 <h3>Disclaimer</h3>
-
-<p>
-Troller Coaster ($TROLLER) is a meme token created for entertainment purposes only and is not financial advice. Always DYOR.
-</p>
-
+<p>Troller Coaster ($TROLLER) is a meme token created for entertainment purposes only and is not financial advice. Always DYOR.</p>
 </div>
-
 </div>
-
 </section>
 
 </div>
 
 <footer>
+<div>Buckle up. We don’t go down, we only go up! © 2025 Troller Coaster</div>
 
-Buckle up. We don’t go down, we only go up! © 2025 Troller Coaster
-
+<div class="footer-links">
+<a href="https://x.com/i/communities/2037729022885380256" target="_blank">X Community</a>
+<a href="https://t.me/RfRarewhaleLaunches" target="_blank">Telegram</a>
+</div>
 </footer>
 
 </body>
